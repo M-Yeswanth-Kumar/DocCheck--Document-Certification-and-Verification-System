@@ -76,10 +76,5 @@ To run the DocCheck system locally:
 4. Connect to the Ethereum blockchain using MetaMask.
 5. Interact with the system using the provided workflows.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 Feel free to contribute and improve this project by opening issues and pull requests.
