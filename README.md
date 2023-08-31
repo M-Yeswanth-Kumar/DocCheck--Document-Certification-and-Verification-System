@@ -1,4 +1,4 @@
-# DocCheck--Document-Certification-and-Verification-System\
+# DocCheck--Document-Certification-and-Verification-System
 # DocCheck: Document Certification & Verification System
 
 ## Description
