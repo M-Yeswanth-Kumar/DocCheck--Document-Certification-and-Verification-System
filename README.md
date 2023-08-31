@@ -1,80 +1,55 @@
-# DocCheck--Document-Certification-and-Verification-System
-# DocCheck: Document Certification & Verification System
+# Etherdocs: Decentralized Document Management System
 
-## Description
+## Introduction
 
-DocCheck is a project that focuses on implementing an efficient anti-forgery mechanism for academic documents using blockchain, IPFS, and hash functions. The project aims to ensure document authenticity, reduce counterfeit certificates, and streamline the verification process.
+**Etherdocs** is a revolutionary **Decentralized Application (DAPP)** that harnesses the power of the Ethereum Blockchain to efficiently manage student documents. This innovative platform streamlines the end-to-end process of both issuing and verifying documents, providing unparalleled authenticity, security, and efficiency. By leveraging cutting-edge Blockchain technology, Etherdocs offers a cost-effective solution for document storage while enabling real-time verification.
 
-## Roles
+### Aims & Objectives
 
-The project involves three main roles:
+The primary aim of Etherdocs is to establish a **decentralized portal** dedicated to the seamless management and verification of documents with long-term value. The platform's core objectives include:
 
-- **Issuer:** Responsible for creating and issuing electronic certificates.
-- **Verifier:** Authenticates certificates using the provided mechanisms.
-- **Student:** Receives and accesses their academic documents securely.
+- Facilitating the verification process to promptly identify forged documents and ensure their authenticity.
+- Eliminating the laborious manual steps often involved in document reception and verification, offering faster outcomes.
+- Enabling the issuance, verification, and secure storage of various documents within a unified ecosystem.
+- Harnessing the power of Blockchain technology and the Ethereum network to significantly reduce the costs associated with cloud storage, all while enhancing security through smart contract implementations.
 
-## Features
+### Scope of the Project
 
-- **Security:** Utilizes blockchain, IPFS, and hash functions to ensure tamper-proof document storage.
-- **Efficiency:** Simplifies the verification process, eliminating manual steps for verifiers.
-- **Accessibility:** Enables students to easily access their verified academic documents via IPFS.
-- **Transparency:** Leverages blockchain to ensure transparency and traceability in document issuance and verification.
-- **Universality:** Suitable for educational institutions, employers, and government agencies to counter fraudulent certificates.
+The implementation of Blockchain technology is a pivotal component within automated management systems for educational institutions. Etherdocs seeks to address the time-consuming nature of retrieving sensitive student information and administrative data for learning and research purposes. The platform's scope encompasses:
 
-## Architecture
+- Designing a decentralized system that effectively utilizes blockchain for heightened security and transparency.
+- Stakeholders involved in the system: Issuer (university/college), Verifier (employer or higher education institution), and User (recent graduate).
+- The project's focal point is the eradication of forged and counterfeit certificates, ensuring the utmost credibility in the document verification process.
 
-### Issuer Workflow
+## Software and Hardware Setup
 
-1. Submission of raw document and user's blockchain address.
-2. Generation of UUID and QR code, appending them to the document.
-3. Calculation of hash of the document along with QR code.
-4. Upload of the document with QR code to IPFS.
-5. Storage of hash value, issuer address, user address, and IPFS link.
+The operational environment for Etherdocs entails a combination of software and hardware components:
 
-### Verifier Workflow
+- Node.js version ^14.19.0 and npm version ^8.5.5 for development and deployment.
+- MetaMask wallet integration for facilitating transactions.
+- Ethereum cryptocurrency for executing transactions and smart contracts.
+- Issuer's official webpage publishing wallet addresses for authentication.
+- Modern internet browser (preferably Chrome v80.0) and a stable internet connection for seamless accessibility.
+- Metamask browser extension for secure wallet connections.
 
-1. Input of the document with QR code, UUID, issuer address, user address, and user name.
-2. Computation of hash value of the document.
-3. Verification of the document using blockchain and smart contracts.
-4. Return of verification result to the verifier.
+## Methodology
 
-## Corner Cases
+The operational methodology of Etherdocs is driven by the following key steps:
 
-The system includes an "Invalidate" option, allowing issuers to revoke certificates in the event of human errors, maintaining the integrity of the certification process.
+1. Issuer creates an electronic certificate containing UUID, hash value, and IPFS link.
+2. Uploaded certificates are stored on IPFS for easy access by students.
+3. Blockchain stores crucial certificate data, including hash values, for streamlined verification.
+4. Verifiers utilize hash values to validate document authenticity against stored data.
+5. Smart contracts are employed to execute verification processes securely and efficiently.
 
-## Technologies Used
+## Results and Discussion
 
-### Design Tools
+The successful implementation of Etherdocs showcases its potential to revolutionize document management and verification processes. Key achievements include:
 
-- Excalidraw
-- Draw.io
+- Intuitive user interface for both document issuance and verification.
+- Efficient verification process through the integration of blockchain and IPFS.
+- Robust and tamper-proof storage of certificates, enhancing data security.
 
-### Frontend
+## Conclusion and Future Work
 
-- React.js
-- CSS
-
-### Blockchain
-
-- Ethereum
-- Solidity
-- Hardhat
-- MetaMask
-- Ethers.js
-
-### IPFS
-
-- IPFS Desktop
-
-## Getting Started
-
-To run the DocCheck system locally:
-
-1. Clone this repository.
-2. Navigate to the frontend directory and install dependencies using `npm install`.
-3. Start the React app with `npm start`.
-4. Connect to the Ethereum blockchain using MetaMask.
-5. Interact with the system using the provided workflows.
-
-
-Feel free to contribute and improve this project by opening issues and pull requests.
+Etherdocs presents a pioneering solution that addresses the challenges of conventional document management systems. By establishing a secure, transparent, and decentralized platform, Etherdocs ensures the credibility of academic documents while streamlining verification processes. As the platform matures, it holds the potential to reshape academic document management, benefiting students, issuers, and the broader educational landscape. The ongoing evolution of Etherdocs promises to make a lasting impact on the education sector and the broader blockchain community.
